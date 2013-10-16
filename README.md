@@ -21,7 +21,7 @@ on](http://dave.cheney.net/2013/07/09/an-introduction-to-cross-compilation-with-
 ## Operation
 
 Log files are tailed, messages parsed and queued, and sent to Cube
-asynchronously in batches. Failures are quueed to 25K messages, at which point
+asynchronously in batches. Failures are queued to 25K messages, at which point
 messages start dropping from the back of the queue until Cube becomes available
 again. 
 
