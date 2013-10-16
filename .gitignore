@@ -1,0 +1,4 @@
+*.un~
+*.swp
+data.db
+config.json

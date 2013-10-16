@@ -1,0 +1,8 @@
+{
+  "cube": "http://cube.example.com",
+  "sources": [{
+    "path": "/var/log/system.log",
+    "pattern": ".*",
+    "type": "syslog"
+  }]
+}
