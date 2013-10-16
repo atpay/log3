@@ -1,8 +1,17 @@
 {
-  "cube": "http://cube.example.com",
+  "cube": "http://localhost:1080",
   "sources": [{
     "path": "/var/log/system.log",
     "pattern": "(?P<message>.*)",
     "type": "syslog"
+  },{
+    "path": "/var/log/nginx/access.log",
+    "pattern": "(?P<host>\\S+) - - \\[(?P<time>[^\\]]+)\\] \"(?P<method>[A-Z]+) (?P<uri>\\S+).*\" (?P<status>\\S+) (?P<bytes>\\S+) \"(?P<referer>\\S+)\" \"(?P<agent>.*)\" \"(?P<forward>.*)\"",
+    "type": "nginx",
+    "cast": {
+      "bytes": "integer",
+      "host": "host",
+      "referer", "url"
+    }
   }]
 }
