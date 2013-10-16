@@ -25,7 +25,8 @@ asynchronously in batches. Failures are quueed to 25K messages, at which point
 messages start dropping from the back of the queue until Cube becomes available
 again. 
 
-Adjustment of the batch size and concurrency may 
+Adjustment of the batch size and concurrency may improve performance. Play with
+it and update the README if you find anything interesting. 
 
 ## Basics
 
@@ -53,7 +54,7 @@ You can also specify paths directly instead of using a glob:
   "sources": [{
     "path": "/var/log/nginx/access.log",
     "pattern": "(?P<host>\\S+) - - \\[(?P<time>[^\\]]+)\\] \"(?P<method>[A-Z]+) (?P<uri>\\S+).*\" (?P<status>\\S+) (?P<bytes>\\S+) \"(?P<referer>\\S+)\" \"(?P<agent>.*)\" \"(?P<forward>.*)\"",
-    "type": "request",
+    "type": "request"
   }]
 }
 ```
