@@ -2,7 +2,7 @@
   "cube": "http://cube.example.com",
   "sources": [{
     "path": "/var/log/system.log",
-    "pattern": ".*",
+    "pattern": "(?P<message>.*)",
     "type": "syslog"
   }]
 }
