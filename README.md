@@ -1,4 +1,4 @@
-# log-to-cube
+# log^3
 
 High performance translation utility for parsing data into [Cube](http://square.github.com/cube/).
 
@@ -9,9 +9,9 @@ capable of fixing a bug or two and opening a pull request for it.
 
 Until I release packages you'll need [go](http://golang.org/doc/install) installed
 
-    $ git clone git@bitbucket.org:jkassemi/log-to-cube.git
-    $ cd log-to-cube
-    $ go build log-to-cube.go
+    $ git clone git@github.com:atpay/log3.git
+    $ cd log3
+    $ go build log3.go
 
 You can then use the resulting binary. You can also [target a platform other than the one
 you're compiling

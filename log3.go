@@ -309,7 +309,7 @@ func partitionBatchesToCube(size int) {
 
 	parts := make([][]*CubeEntry, partCount)
 
-	log.Print("log-to-cube: preparing ", len(cubeEntries), " records for upload in ", partCount, " batches")
+	log.Print("log3: preparing ", len(cubeEntries), " records for upload in ", partCount, " batches")
 
 	for i := 0; i < partCount; i += 1 {
 		start := i * size
